@@ -48,6 +48,21 @@ knn-from-scratch/
 - `estimate_function_value(nearest_neighbors, k, standard_dev_mult)` — Gaussian kernel regression
 - `edit_training_data(portion_to_leave, error_threshold, k, exponent)` — training set condensing
 
+## Results
+
+Averaged across 10 stratified train/test splits. Classification metric is hit rate; regression metric is MSE. All features are z-score normalized prior to distance calculation.
+
+| Dataset | Task | kNN Accuracy / MSE | Null Model Baseline |
+|---------|------|--------------------|---------------------|
+| Breast Cancer Wisconsin | Classification | **98.6%** | 65.5% |
+| Car Evaluation | Classification | **91.0%** | 70.3% |
+| House Votes 1984 | Classification | **96.7%** | 61.6% |
+| Abalone | Regression (MSE ↓) | **0.50** | 1.00 |
+| Machine CPU | Regression (MSE ↓) | **3,619.90** | 16,649.58 |
+| Forest Fires | Regression (MSE ↓) | — | 1.93 |
+
+[Read the paper](./Project1.pdf)
+
 ## Datasets
 
 | Dataset | Task | Attribute Types |

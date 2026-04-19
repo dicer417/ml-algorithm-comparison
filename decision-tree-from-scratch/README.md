@@ -59,6 +59,21 @@ decision-tree-from-scratch/
 - `make_parent_leaf(node_dt, parent_node_num)` — collapses a subtree for pruning
 - `load_nodes(num, pruned)` / `save_nodes(file_location)` — model persistence
 
+## Results
+
+Averaged across 10 stratified train/test splits. Pruning consistently improves or matches raw tree accuracy, especially on classification tasks. Classification metric is hit rate; regression metric is MSE.
+
+| Dataset | Task | Raw Tree | Pruned Tree | Null Model |
+|---------|------|----------|-------------|------------|
+| Breast Cancer Wisconsin | Classification | 94.0% | **94.2%** | 65.5% |
+| Car Evaluation | Classification | 80.2% | **87.9%** | 69.9% |
+| House Votes 1984 | Classification | 90.1% | **95.6%** | 61.3% |
+| Abalone | Regression (MSE ↓) | 0.54 | **0.46** | 99.66 |
+| Forest Fires | Regression (MSE ↓) | 4.15 | **3.47** | 2.04 |
+| Machine CPU | Regression (MSE ↓) | **9,724.60** | 10,406.19 | 28,107.85 |
+
+[Read the paper](./Project2-paper.pdf)
+
 ## Datasets
 
 | Dataset | Task | Split Criterion |

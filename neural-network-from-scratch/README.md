@@ -71,6 +71,21 @@ neural-network-from-scratch/
 - `calc_weighted_sum_of_inputs(inputs)` — linear weighted sum
 - `update_weights(node_error, learning_rate)` — delta rule weight update with recursive backprop
 
+## Results
+
+Averaged across 10 stratified train/test splits. "Simple" = no hidden layers (linear model); "Multilayer" = best result across architectures with 1–2 hidden layers. Classification metric is hit rate; regression metric is MSE.
+
+| Dataset | Task | Simple Network | Multilayer Network | Null Model |
+|---------|------|----------------|--------------------|------------|
+| Breast Cancer Wisconsin | Classification | 96.8% | **97.0%** | 65.5% |
+| Car Evaluation | Classification | 87.2% | **88.4%** | 69.9% |
+| House Votes 1984 | Classification | 95.0% | **96.7%** | 61.3% |
+| Abalone | Regression (MSE ↓) | **0.50** | 1.00 | 1.00 |
+| Machine CPU | Regression (MSE ↓) | **8,792.14** | 14,567.94 | 28,770.50 |
+| Forest Fires | Regression (MSE ↓) | — | 1.85 | 1.84 |
+
+[Read the paper](./Project3-paper.pdf)
+
 ## Datasets
 
 | Dataset | Task | Loss Function |

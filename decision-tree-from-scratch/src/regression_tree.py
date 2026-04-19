@@ -623,7 +623,7 @@ class RegressionTree:
 
 
 if __name__ == '__main__':
-    os.chdir('C:\\Users\\toddi\\PycharmProjects\\Programming-Project-2')
+    os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 
     data_loader1 = DataLoader('breast-cancer-wisconsin')
     data_loader1.load_saved_data()

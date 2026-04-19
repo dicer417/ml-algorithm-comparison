@@ -355,7 +355,7 @@ class DataLoader:
 
 
 if __name__ == '__main__':
-    os.chdir('C:\\Users\\toddi\\PycharmProjects\\Programming-Project-3')
+    os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 
     # datasets = ['abalone', 'breast-cancer-wisconsin', 'car', 'forestfires', 'house-votes-84', 'machine']
     # for unique_dataset in datasets:

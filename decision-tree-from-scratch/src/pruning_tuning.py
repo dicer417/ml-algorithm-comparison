@@ -317,7 +317,7 @@ class Pruner:
 
 
 if __name__ == '__main__':
-    os.chdir('C:\\Users\\toddi\\PycharmProjects\\Programming-Project-2')
+    os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 
     pruner = Pruner('house-votes-84', reprocess_data=False)
     pruner.prune_tree(tree_num=1, write_pruned_tree=False)

@@ -411,7 +411,7 @@ class NearestNeighbor2:
 
 
 if __name__ == '__main__':
-    os.chdir('C:\\Users\\toddi\\PycharmProjects\\Programming-Project-1')
+    os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..'))
 
     model = NearestNeighbor2('breast-cancer-wisconsin')
     model.split_training_data()

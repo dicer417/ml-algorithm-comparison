@@ -371,7 +371,7 @@ class NetworkTuner:
 
 
 if __name__ == '__main__':
-    os.chdir('C:\\Users\\toddi\\PycharmProjects\\Programming-Project-3')
+    os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 
     # ------------------------- Video -------------------------
     # Train models
