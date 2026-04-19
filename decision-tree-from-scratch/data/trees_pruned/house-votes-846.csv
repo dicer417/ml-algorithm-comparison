@@ -1,0 +1,9 @@
+nodeNum,parentNodeNum,splitFeature,splitBoundary,predictedValue,depth,childNodeDirectory,isRoot,isLeaf,fullCondition,used_features,childNodeDictionary
+1,,physician-fee-freeze,,democrat,1,"{'y': np.int64(2), 'n': np.int64(3), '?': np.int64(4)}",True,False,,['physician-fee-freeze'],
+2,1.0,synfuels-corporation-cutback,,republican,2,"{'n': np.int64(5), 'y': np.int64(6)}",False,False,`physician-fee-freeze`=='y',"['physician-fee-freeze', 'synfuels-corporation-cutback']",
+3,1.0,adoption-of-the-budget-resolution,,democrat,2,"{'n': np.int64(7), 'y': np.int64(8), '?': np.int64(9)}",False,True,`physician-fee-freeze`=='n',"['physician-fee-freeze', 'adoption-of-the-budget-resolution']",
+4,1.0,mx-missile,,democrat,2,"{'y': np.int64(10), 'n': np.int64(11)}",False,True,`physician-fee-freeze`=='?',"['physician-fee-freeze', 'mx-missile']",
+5,2.0,mx-missile,,republican,3,"{'n': np.int64(12), 'y': np.int64(13)}",False,True,`physician-fee-freeze`=='y' & `synfuels-corporation-cutback`=='n',"['physician-fee-freeze', 'synfuels-corporation-cutback', 'mx-missile']",
+6,2.0,mx-missile,,republican,3,"{'n': np.int64(14), 'y': np.int64(15)}",False,False,`physician-fee-freeze`=='y' & `synfuels-corporation-cutback`=='y',"['physician-fee-freeze', 'synfuels-corporation-cutback', 'mx-missile']",
+14,6.0,education-spending,,republican,4,"{'y': np.int64(32), '?': np.int64(33), 'n': np.int64(34)}",False,True,`physician-fee-freeze`=='y' & `synfuels-corporation-cutback`=='y' & `mx-missile`=='n',"['physician-fee-freeze', 'synfuels-corporation-cutback', 'mx-missile', 'education-spending']",
+15,6.0,aid-to-nicaraguan-contras,,democrat,4,"{'n': np.int64(35), 'y': np.int64(36)}",False,True,`physician-fee-freeze`=='y' & `synfuels-corporation-cutback`=='y' & `mx-missile`=='y',"['physician-fee-freeze', 'synfuels-corporation-cutback', 'mx-missile', 'aid-to-nicaraguan-contras']",

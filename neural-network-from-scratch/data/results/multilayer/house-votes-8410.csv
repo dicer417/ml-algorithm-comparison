@@ -1,0 +1,2 @@
+learningRate,hiddenLayerSize1,hiddenLayerSize2,max_iterations,check_increment,iterationsToTrain,networkLoss,hit_rate,null_model
+0.1,8,8,35000,350,2100,-162.6197304416434,0.9482758620689655,0.6149425287356322

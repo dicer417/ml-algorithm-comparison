@@ -1,0 +1,3 @@
+autoencoderLearningRate,autoencoderHiddenLayerSize,learningRate,hiddenLayerSize2,max_iterations,check_increment,iterationsToTrain,networkLoss,hit_rate,null_model
+0.1,4,0.1,4,55800,558,4464,-262.93981834020326,0.9572953736654805,0.6548042704626335
+0.1,4,0.1,9,55800,558,3906,-261.20806709185996,0.9430604982206405,0.6548042704626335
